@@ -81,6 +81,20 @@ class BuyProduct extends Component {
             }
         }
 
+       
+        if (!fields["dob"]) {
+            formIsValid = false;
+            errors["dob"] = "*Please enter your Date of Birth.";
+        }
+
+        if (typeof fields["dob"] !== "undefined") {
+            if (!fields["dob"].match((/^(0[1-9]|[12][0-9]|3[01])[\- \/.](?:(0[1-9]|1[012])[\- \/.](19|20)[0-9]{2})$/))) {
+                formIsValid = false;
+                errors["dob"] = "*Please enter valid mobile no.";
+            }
+        }
+
+
         if (!fields["mobileNo"]) {
             formIsValid = false;
             errors["mobileNo"] = "*Please enter your mobile no.";
@@ -93,17 +107,6 @@ class BuyProduct extends Component {
             }
         }
 
-        if (!fields["dob"]) {
-            formIsValid = false;
-            errors["dob"] = "*Please enter your Date of Birth.";
-        }
-
-        if (typeof fields["dob"] !== "undefined") {
-            if (!fields["dob"].match((/^(0[1-9]|[12][0-9]|3[01])[\- \/.](?:(0[1-9]|1[012])[\- \/.](19|20)[0-9]{2})$/))) {
-                formIsValid = false;
-                errors["dob"] = "*Please enter valid mobile no.";
-            }
-        }
 
         if (!fields["address"]) {
             formIsValid = false;
@@ -130,12 +133,20 @@ class BuyProduct extends Component {
 
     }
 
+    back = () => {
+        this.props.history.push(`/`)
+    }
+
 
 
     render() {
         return (
             <div className="container">
+                
+                    <button className="policy-btn" onClick={this.back}>Back</button>
+                    
                 <div className="row">
+                    
                     <div className="col-md-1"></div>
                     <div className="box col-md-4">
                         <div className="user-details">
