@@ -19,6 +19,7 @@ code {
     font-size: 18px;
     line-height: 1.3333333;
 }
+
 .form-control:focus, .form-control:active {
   border-color: #ff6200 !important;
   box-shadow: #ff6200 !important;
@@ -31,10 +32,7 @@ code {
 .home-header-content{
   background-color: #f4f4f4 !important;
   margin-bottom: 60px;
-  /* margin-top: 40px; */
 }
-
-
 
 .nav-header-link {
     float:right;
@@ -45,7 +43,6 @@ code {
     color: #444444;
     letter-spacing: -0.4px;
     font-family: "ING Me Regular";
-    
 }
 
 .list-title {
@@ -102,11 +99,12 @@ label{
 .view-btn{
 background: transparent;
 border: none;
-font-size: 12px;
+font-size: 16px;
 cursor: pointer;
 float: right;
 margin: 0;
 color: orange;
+font-weight: bold
 
 }
 
@@ -116,19 +114,36 @@ color: orange;
 }
 
 td.header-text{
-  font-size: 12px;
+  font-size: 16px;
 }
 
-@media (max-width: 480px) { 
-
-
-  .navbar-brand {
-    margin: 0 !important;
-  }
- }
 
  .graph {
   float: left;
   font-size: 32px;
  }
 
+ .modal-title{
+  color: orange;
+ }    
+
+
+ .x-axis{
+   widows: 10px;;
+ }
+
+ .navbar-brand{
+   color: orange;
+   font-size: 20px;
+   font-weight: bold;
+ }
+ .success-page{
+   margin-top: 20px;
+   font-size: 30px;
+ }
+
+ @media (max-width: 480px) { 
+  .navbar-brand {
+    margin: 0 !important;
+  }
+ }
