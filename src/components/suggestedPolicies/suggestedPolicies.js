@@ -28,6 +28,10 @@ class ListPolicy extends Component {
     back = () => {
         this.props.history.push(`/`)
     }
+
+    topTrending = () => {
+        this.props.history.push(`/topTrending`)
+    }
     
     render() {
         

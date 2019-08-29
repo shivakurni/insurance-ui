@@ -5,7 +5,8 @@ import { Link, Route, Switch } from 'react-router-dom';
 import Capture from '../src/images/Capture.PNG';
 import ListPolicy from './components/listOfPolicies/listOfPolicies';
 import SuggestedPolicy from './components/suggestedPolicies/suggestedPolicies';
-import BuyProduct from '../src/components/buyProduct/buyProduct'
+import BuyProduct from '../src/components/buyProduct/buyProduct';
+import TrendingPolicy from '../src/components/trendingPolicies/trendingPolicy'
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route exact path="/" component={ListPolicy} />
           <Route exact path="/suggestedPolicy" component={SuggestedPolicy} />
           <Route exact path="/buyProduct" component={BuyProduct} />
+          <Route exact path="/topTrending" component={TrendingPolicy} />
 
         </Switch>
 

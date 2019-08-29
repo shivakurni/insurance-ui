@@ -1,0 +1,20 @@
+[
+    {
+        "policyId": 1,
+        "policyName": "Lic Insurance",
+        "count": 1,
+        "percentage": 22.5
+    },
+    {
+        "policyId": 2,
+        "policyName": "Lic Insurance",
+        "count": 3,
+        "percentage": 62.5
+    },
+    {
+        "policyId": 3,
+        "policyName": "Lic Insurance",
+        "count": 6,
+        "percentage": 27.5
+    }
+]

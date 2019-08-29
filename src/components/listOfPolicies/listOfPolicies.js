@@ -24,9 +24,9 @@ class ListPolicy extends Component {
     //    this.props.history.push(`/placeOrder`)
     }
 
-    // topTrending = () => {
-    //     this.props.history.push(`/placeOrder`)
-    // }
+    topTrending = () => {
+        this.props.history.push(`/topTrending`)
+    }
 
     suggestedPolicy = () => {
         this.props.history.push(`/suggestedPolicy`)

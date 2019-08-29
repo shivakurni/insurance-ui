@@ -127,3 +127,8 @@ td.header-text{
   }
  }
 
+ .graph {
+  float: left;
+  font-size: 32px;
+ }
+
